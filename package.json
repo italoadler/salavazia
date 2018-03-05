@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "three.js": "^0.77.1"
+  },
+  "name": "italo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/italoadler/salavazia",
+  "author": "Italo Adler <adler.italo@gmail.com>",
+  "license": "MIT",
+  "description": "prototipo nao funcional"
+}

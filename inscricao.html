@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sala vazia residência</title>
+    <style>
+ 
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+      <div class="container is-widescreen">
+       <nav class="navbar ">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="img/logo.png" alt="" >
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="">
+        Sobre a Residência
+      </a>
+      <a class="navbar-item" href="inscricao.html">
+        Convocatória Aberta
+      </a>
+      <a class="navbar-item" href="">
+        Contatos
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">
+          Blogs
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="/documentation/overview/start/">
+            Arte Digital
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+            Arte Sonora
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+            Performance
+          </a>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+              <span class="icon">
+                <i class="fab fa-facebook"></i>
+              </span>
+              <span>
+                Sala Vazia
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Regulamento</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+      <div class="notification">
+      Este esta é a página de inscrições para a convocatória <strong>aberta</strong> <em>até</em> o dia <code>15 de junho</code>.
+      </div>
+      <div class="field">
+  <label class="label">Nome</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Usuário</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" placeholder="Text input" value="salavazia ">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </div>
+  <p class="help is-success">Este usuário não está disponível</p>
+</div>
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" type="email" placeholder="Email input" value="producao@">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+  </div>
+  <p class="help is-danger">Este email é inválido.</p>
+</div>
+
+<div class="field">
+  <p class="control has-icons-left">
+    <span class="select">
+      <select>
+        <option selected>País</option>
+        <option>Selecione</option>
+        <option>Brasil</option>
+      </select>
+    </span>
+    <span class="icon is-small is-left">
+      <i class="fas fa-globe"></i>
+    </span>
+  </p>
+</div>
+
+<div class="field">
+  <label class="label">Linguagem</label>
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>Selecione</option>
+        <option>Arte Sonora</option>
+        <option>Arte Digital</option>
+        <option>Performance</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Porque você quer participar da residência?</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="checkbox">
+      <input type="checkbox">
+      Eu aceito os termos do <a href="#">regulamento.</a>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="radio">
+      <input type="radio" name="question">
+      Sim
+    </label>
+    <label class="radio">
+      <input type="radio" name="question">
+      Não
+    </label>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link">Enviar</button>
+  </div>
+  <div class="control">
+    <button class="button is-text">Cancelar</button>
+  </div>
+</div>
+      </div>
+  </body>
+</html>
